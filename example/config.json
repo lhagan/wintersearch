@@ -1,0 +1,9 @@
+{
+  "locals": {
+    "url": "/",
+    "name": "The Wintersmith's blog",
+    "owner": "The Wintersmith",
+    "description": "-32°C ain't no problems!",
+    "index_articles": 3
+  }
+}
