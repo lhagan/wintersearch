@@ -8,6 +8,10 @@
   "bin": {
     "wintersearch": "./cli/wintersearch"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lhagan/wintersearch.git"
+  },
   "dependencies": {
       "express": "2.5.10",
       "http-proxy": "0.8.1",
