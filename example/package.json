@@ -1,0 +1,7 @@
+{
+  "name": "wintersearch-example",
+  "version": "0.1.0",
+  "dependencies": {
+      "wintersmith-coffee": "0.1.x"
+  }
+}
