@@ -5,7 +5,7 @@
 InstantSearch =
   running: false
   request: null
-  url: "/search/search"
+  url: "/search/"
   old_search_term: ""
   init: ->
     # hook our ajax event when a key is released

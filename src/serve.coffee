@@ -5,11 +5,12 @@ serve = (projectSearchCollection) ->
   search = (terms, callback) ->
     natural.PorterStemmer.attach()
     terms = terms.tokenizeAndStem().join(" ")
+    # TODO: don't return the description, just the title and url are needed
     results = projectSearchCollection.setSearchString(terms).query().toJSON()
     callback results
   
   app = express.createServer()
-  app.get '/search', (request, response) ->
+  app.get '/', (request, response) ->
     if request.query.hasOwnProperty 'q'
       terms = request.query.q
       callback = (output) ->
