@@ -34,6 +34,7 @@ _Note: at the moment, these port numbers are hard-coded but these will configura
 
 wintersearch is made possible by a bunch of great projects:
 
+* [CoffeeScript](http://coffeescript.org)
 * [wintersmith](https://github.com/jnordberg/wintersmith): static site generator
 * [express.js](http://expressjs.com): web application framework that serves the search engine
 * [node-http-proxy](https://github.com/nodejitsu/node-http-proxy): proxies the wintersmith and wintersearch servers onto a single port for testing in preview mode
