@@ -6,7 +6,7 @@ wintersearch is a simple full-text search engine for [wintersmith](https://githu
 Install
 -------
 
-    npm install -g git+https://github.com/lhagan/wintersearch.git
+    npm install -g git://github.com/lhagan/wintersearch.git
 
 Usage
 ------
