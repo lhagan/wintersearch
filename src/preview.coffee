@@ -11,7 +11,7 @@ preview = ->
     #
     options = {
         router: {
-        'localhost/search/': '127.0.0.1:' + wintersearch_port,
+        'localhost/search/': '127.0.0.1:' + wintersearch_port + '/search/',
         'localhost/': '127.0.0.1:' + wintersmith_port
         }
     }

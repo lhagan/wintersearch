@@ -10,7 +10,7 @@ serve = (projectSearchCollection) ->
     callback results
   
   app = express.createServer()
-  app.get '/', (request, response) ->
+  app.get '/search/', (request, response) ->
     if request.query.hasOwnProperty 'q'
       terms = request.query.q
       callback = (output) ->
