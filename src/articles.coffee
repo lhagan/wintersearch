@@ -1,9 +1,11 @@
 wintersmith = require 'wintersmith'
 _ = require('underscore')._
 natural = require 'natural'
+path = require 'path'
 
-get_articles = (callback) ->
-    wintersmith.loadContents "./contents", (error, contents) ->
+get_articles = (workingpath, callback) ->
+    contents = path.join workingpath, "contents"
+    wintersmith.loadContents contents, (error, contents) ->
         natural.PorterStemmer.attach()
         articles = []
         scan = (item) ->
