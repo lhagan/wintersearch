@@ -4,23 +4,28 @@ natural = require 'natural'
 path = require 'path'
 
 get_articles = (workingpath, callback) ->
-    contents = path.join workingpath, "contents"
-    wintersmith.loadContents contents, (error, contents) ->
+    config = path.join workingpath, "config.json"
+    env = wintersmith config
+    env.load (error, contents) ->
         natural.PorterStemmer.attach()
         articles = []
         scan = (item) ->
-            _.chain(item._.directories).each (subitem) ->
-                node = subitem.index
-                if node and node.title
-                    console.log node.url
-                    articles.push
-                        title: node.title
-                        title_token: node.title.tokenizeAndStem().join(" ")
-                        url: node.url
-                        body: node._content.tokenizeAndStem().join(" ")
-                scan subitem if item
-
-        directories = _.chain(contents._.directories)
+            _.chain(item).each (subitem) ->
+                if subitem
+                    node = subitem["index.md"]
+                    if node
+                      if node.title
+                          console.log node.url
+                          articles.push
+                              title: node.title
+                              title_token: node.title.tokenizeAndStem().join(" ")
+                              url: node.url
+                              body: node.markdown.tokenizeAndStem().join(" ")
+                      if typeof(node) is "object"
+                          if Object.keys(node) > 1
+                              scan subitem if item
+        
+        directories = _.chain(contents.contents)
         pages = directories.each((item) ->
             scan item
         )

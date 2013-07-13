@@ -23,7 +23,7 @@ To use wintersearch on a live webserver, run `wintersearch` from within your pro
     	proxy.server = ( "" => ( ( "host" => "127.0.0.1", "port" => 3000 ) ) )
     }
     
-The server only indexes content upon startup, so you'll need to restart it after making a change to the site content in order to index the new text.
+The server only indexes content upon startup, so you'll need to restart it after making a change to the site content in order to index the new text. Also, it presently only looks at text in `index.md` files.
 
 How it works
 ------------

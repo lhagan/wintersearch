@@ -24,9 +24,10 @@ preview = ->
     #
     util = require("util")
     spawn = require("child_process").spawn
+    
+    console.log "wintersearch preview running on port #{preview_port}"
 
     # http://stackoverflow.com/questions/7464036/node-js-shell-script-and-arguments
-    console.log wintersmith_port
     ls = spawn("wintersmith", [ "preview", "-p", wintersmith_port ])
     ls.stdout.on "data", (data) ->
         process.stdout.write data.toString()

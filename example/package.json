@@ -1,7 +1,9 @@
 {
-  "name": "wintersearch-example",
-  "version": "0.1.0",
   "dependencies": {
-      "wintersmith-coffee": "0.1.x"
-  }
+    "moment": "2.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x",
+    "wintersmith-coffee": "0.2.x"
+  },
+  "repository": "none"
 }

@@ -1,6 +1,6 @@
 {
   "name": "wintersearch",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Luke Hagan (http://lukehagan.com)",
   "description": "Simple full-text search for Wintersmith",
   "license": "MIT",
