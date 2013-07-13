@@ -6,12 +6,12 @@ wintersearch is a simple full-text search engine for [wintersmith](https://githu
 Install
 -------
 
-    npm install -g git://github.com/lhagan/wintersearch.git
+    npm install -g wintersearch
 
 Usage
 ------
 
-To start, clone this repo or otherwise download the [example](https://github.com/lhagan/wintersearch/tree/master/example). Then, from within the `example` folder, run
+To start, clone the [GitHub repo](https://github.com/lhagan/wintersearch) or otherwise download the [example](https://github.com/lhagan/wintersearch/tree/master/example). Then, from within the `example` folder, run
 
     wintersearch preview
     
